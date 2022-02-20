@@ -1,0 +1,248 @@
+body{
+    font-size: 80%;
+    background: rgb(1, 56, 107) url(img/pexels-cliford-mervil-mod_01.jpg) no-repeat fixed center center;
+    padding: 0%; 
+    margin: 0;
+    background-size: cover;
+    font-family: 'Fredoka One', cursive;
+    height: 500px;
+}
+header, footer{
+    border: 3px red;
+    width:100%;
+    height: 400px;
+    background-color: blue;
+    background:  linear-gradient(180deg, rgb(1, 51, 75) 0%, rgba(0, 71, 122, 0.466) 40%, rgba(151,151,151,.1) 92%, rgba(135,135,135,0) 100%) center 0%;  
+}
+header .navLinksA{
+    position:fixed;
+    left: 2em;
+}
+header a{
+    display: inline-flex;
+    color:white;
+    font-size: x-large;
+    margin-left: 1em;
+}
+header nav{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.navLinksA{
+    flex:1;
+}
+.navLinksB{
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin-left: 30em;
+flex:1;
+}
+.liLinks{
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+h1{
+    font-size: 8em;
+    color: white;
+    text-align: center;
+}
+.snuggleBearImg{
+    align-self: flex-end;
+}
+/* show this w/ display flex to show what happens */
+.midContainer{
+    display: flex;
+}
+.sidebarTitle
+{
+    color:white;
+    text-align: center;
+    text-decoration: underline;
+}
+.midContainer #sidebar{
+    
+    color:white;
+    
+    background-color: #38375471;
+    font-size:1.2em;
+    margin-top: 6em;
+    margin-left: 3em; 
+    border:2px solid black;
+    border-radius: 1em;
+    width: 22em;
+}
+.midContainer #mainBody{
+    
+    color:white;
+    
+    background-color: #38375471;
+    font-size: 1em;
+    margin-top: 7em;
+    margin-left: 4em; 
+    border:2px solid black;
+    border-radius: 1em;
+    width: 62em;
+}
+.midContainer #sidebarB{
+    
+    color:white;
+    
+    background-color: #38375471;
+    font-size:1.2em;
+    margin-top: 6em;
+    margin-left: 2em; 
+    border:2px solid black;
+    border-radius: 1em;
+    width: 22em;
+}
+.snuggleNewsHolder
+{
+   
+    line-height: 1.8;
+    width:270px;
+    height:760px;
+    margin-right: 2em;
+    font-size: 1em;
+}
+.snuggleNewsHolder li
+{
+    list-style-type: none;
+}
+.sFacts li
+{
+    list-style-type: decimal;
+}
+.CapSn
+{
+    font-size: 1.5rem;
+    color:rgb(0, 102, 255);
+}
+#sidebarB
+{
+    color:white;
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    /* border: 3px solid red; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 28em;
+    width: 50em;
+}
+.card{
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    width: 300px; height: 150px;
+    
+}
+.card p{
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    /* width: 300px; height: 150px; */
+    
+}
+/* Single-direction drop shadow */
+.newWord
+{
+    font-size: 1.5rem;
+    color:rgb(0, 102, 255);
+}
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+.liquidSoftnerContainer{
+    display: flex;
+    /* border: 3px solid red; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 28em;
+    width: 50em;
+}
+.productsHolder{
+    margin-left: 2em;
+}
+footer ol li
+{
+    color: white;
+    display: inline-block;
+   
+}
+footer ol li a
+{
+  color: white;
+  font-size: 2em;
+}
+footer ol li a:hover 
+{
+    color:rgb(4, 77, 119);
+    /* border: 2px solid whitesmoke ; */
+    border-radius: 2em;
+    background-color: whitesmoke;
+}
+.ContactInfo
+{
+    color:white;
+    margin-top:-3em;
+    margin-left: 70em;
+}
+
+.card2 img{
+    width: 180px; 
+    height: 240px;
+}
+
+@media(max-width:500px){
+    #sidebar,#sidebarB, h1,.navLinksB{
+        display: none;
+    }
+    .snuggleBearImg{
+        margin-top: 7em;
+        justify-content: center;
+    }
+    .navLinksB{
+        border:1px solid red;
+       justify-content: start;
+       height: 0;
+    }
+    .midContainer #mainBody{
+        margin-left: 0em;
+        width: 470px;
+    }
+    .card-container{
+        display: flex;
+        width:470px;
+    }
+    .card{
+        display: inline-flex;
+        justify-content: space-evenly;
+        width: 160px;
+        height: 120px;
+        margin-right: 3em;
+    }
+    .card p{
+        display: none;
+    }
+    .liquidSoftnerContainer{
+        display: inline-flex;
+        /* border: 3px solid red; */
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        height: 19em;
+        width: 30em;
+    }
+
+    .card2 img{
+        width: 100px; 
+        height: 120px;
+    }
+}
