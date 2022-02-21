@@ -200,8 +200,54 @@ footer ol li a:hover
     height: 240px;
 }
 
-@media(max-width:500px){
+@media(max-width:800px){
     #sidebar,#sidebarB, h1,.navLinksB{
+        display: none;
+    }
+    .snuggleBearImg{
+        margin-top: 7em;
+        justify-content: center;
+    }
+    .navLinksB{
+        border:1px solid red;
+       justify-content: start;
+       height: 0;
+    }
+    .midContainer #mainBody{
+        margin-left: 0em;
+        width: 470px;
+    }
+    .card-container{
+        display: flex;
+        width:470px;
+    }
+    .card{
+        display: inline-flex;
+        justify-content: space-evenly;
+        width: 160px;
+        height: 120px;
+        margin-right: 3em;
+    }
+    .card p{
+        display: none;
+    }
+    .liquidSoftnerContainer{
+        display: inline-flex;
+        /* border: 3px solid red; */
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        height: 19em;
+        width: 30em;
+    }
+
+    .card2 img{
+        width: 100px; 
+        height: 120px;
+    }
+}
+@media(max-width:1200px){
+    #sidebarB, h1,.navLinksB{
         display: none;
     }
     .snuggleBearImg{
