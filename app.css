@@ -12,7 +12,7 @@ header, footer{
     width:100%;
     height: 400px;
     background-color: blue;
-    background:  linear-gradient(180deg, rgb(1, 51, 75) 0%, rgba(0, 71, 122, 0.466) 40%, rgba(151,151,151,.1) 92%, rgba(135,135,135,0) 100%) center 0%;  
+    background:  linear-gradient(180deg, rgb(1, 51, 75) 0%, rgba(0, 71, 122, 0.466) 40%, rgba(151,151,151,.1) 92%, rgba(135,135,135,0) 100%) center 100%;  
 }
 header .navLinksA{
     position:fixed;
@@ -209,7 +209,7 @@ footer ol li a:hover
         justify-content: center;
     }
     .navLinksB{
-        border:1px solid red;
+        /* border:1px solid red; */
        justify-content: start;
        height: 0;
     }
@@ -246,7 +246,7 @@ footer ol li a:hover
         height: 120px;
     }
 }
-@media(max-width:1200px){
+@media(max-width:400px){
     #sidebarB, h1,.navLinksB{
         display: none;
     }
@@ -254,25 +254,35 @@ footer ol li a:hover
         margin-top: 7em;
         justify-content: center;
     }
+    .navLinksA{
+        margin-left: -3em;
+    }
     .navLinksB{
         border:1px solid red;
        justify-content: start;
        height: 0;
     }
     .midContainer #mainBody{
-        margin-left: 0em;
-        width: 470px;
+        margin-left: .5em;
+        width: 369px;
+        height: 800px;
     }
     .card-container{
+        /* border: 2px solid red; */
         display: flex;
-        width:470px;
+        flex-wrap: wrap;
+        width:280px;
+        height: 410px;
+        margin-bottom: 7em;
+        margin-left: 3em;
     }
     .card{
-        display: inline-flex;
-        justify-content: space-evenly;
-        width: 160px;
-        height: 120px;
-        margin-right: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 122px;
+        height: 122px;
+       
     }
     .card p{
         display: none;
@@ -282,13 +292,20 @@ footer ol li a:hover
         /* border: 3px solid red; */
         flex-direction: row;
         /* flex-wrap: wrap; */
-        justify-content: center;
+        justify-content: space-evenly;
         height: 19em;
         width: 30em;
+        margin-right: -4em;
     }
-
     .card2 img{
-        width: 100px; 
-        height: 120px;
+        
+        width: 90px; 
+        height: 110px;
+        margin-left: -4em;
+      
     }
+    .card2 p{
+        display: none;
+    }
+   
 }
